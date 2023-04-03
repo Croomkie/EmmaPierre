@@ -10,4 +10,4 @@
 # Faire des commites
 'git commit -m "message"'
 #pusher vers le depot distant
-'git push origin'
+'git push -u origin main'
