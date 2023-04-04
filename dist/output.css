@@ -594,22 +594,6 @@ video {
   display: block;
 }
 
-.flex {
-  display: flex;
-}
-
-.inline-flex {
-  display: inline-flex;
-}
-
-.hidden {
-  display: none;
-}
-
-.h-\[214px\] {
-  height: 214px;
-}
-
 .h-16 {
   height: 4rem;
 }
@@ -622,10 +606,136 @@ video {
   height: 2rem;
 }
 
-.w-\[700px\] {
-  width: 700px;
+.flex {
+  display: flex;
 }
 
+.inline-flex {
+  display: inline-flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.h-\[72px\] {
+  height: 72px;
+}
+
+.w-\[170px\] {
+  width: 170px;
+}
+
+.rounded-r-full {
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+}
+
+.bg-corail-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(247 100 93 / var(--tw-bg-opacity));
+}
+
+.font-title {
+  font-family: Neue Machina;
+}
+
+.opacity-25 {
+  opacity: 0.25;
+}
+
+.h-\[72px\] {
+  height: 72px;
+}
+
+.w-\[170px\] {
+  width: 170px;
+}
+
+.w-\[69px\] {
+  width: 69px;
+}
+
+@font-face {
+  font-family: 'Neue Machina';
+
+  src: url('../font/NeueMachina-Ultrabold.otf') format('truetype');
+
+  font-weight: normal;
+
+  font-style: normal;
+}
+
+.rounded-r-full {
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+}
+
+.bg-corail-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(247 100 93 / var(--tw-bg-opacity));
+}
+
+.bg-nude-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 229 211 / var(--tw-bg-opacity));
+}
+
+.font-title {
+  font-family: Neue Machina;
+}
+
+.opacity-25 {
+  opacity: 0.25;
+}
+
+@font-face {
+  font-family: 'Neue Machina';
+
+  src: url('../font/NeueMachina-Ultrabold.otf') format('truetype');
+
+  font-weight: normal;
+
+  font-style: normal;
+}
+
+@media (min-width: 768px) {
+  .md\:container {
+    width: 100%;
+    padding-right: 200px;
+    padding-left: 200px;
+  }
+
+  @media (min-width: 640px) {
+    .md\:container {
+      max-width: 640px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .md\:container {
+      max-width: 768px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .md\:container {
+      max-width: 1024px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .md\:container {
+      max-width: 1280px;
+    }
+  }
+
+  @media (min-width: 1536px) {
+    .md\:container {
+      max-width: 1536px;
+    }
+  }
+  
 .w-6 {
   width: 1.5rem;
 }
@@ -890,4 +1000,5 @@ video {
     padding-left: 2rem;
     padding-right: 2rem;
   }
+}
 }
