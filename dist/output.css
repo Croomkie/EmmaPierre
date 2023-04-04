@@ -583,6 +583,26 @@ video {
   background-color: rgb(247 100 93 / var(--tw-bg-opacity));
 }
 
+.bg-red-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
+
+.bg-blue-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 55 63 / var(--tw-bg-opacity));
+}
+
+.bg-red-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
+}
+
+.bg-nude-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 229 211 / var(--tw-bg-opacity));
+}
+
 .font-title {
   font-family: Neue Machina;
 }
@@ -599,4 +619,47 @@ video {
   font-weight: normal;
 
   font-style: normal;
+}
+
+@media (min-width: 768px) {
+  .md\:container {
+    width: 100%;
+    padding-right: 200px;
+    padding-left: 200px;
+  }
+
+  @media (min-width: 640px) {
+    .md\:container {
+      max-width: 640px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .md\:container {
+      max-width: 768px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .md\:container {
+      max-width: 1024px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .md\:container {
+      max-width: 1280px;
+    }
+  }
+
+  @media (min-width: 1536px) {
+    .md\:container {
+      max-width: 1536px;
+    }
+  }
+
+  .md\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
