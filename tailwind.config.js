@@ -21,6 +21,10 @@ module.exports = {
     container: {
       padding: "200px",
     },
+    fontFamily: {
+      'Jost': ["Jost"],
+      'title': ["Neue Machina"],
+    },
   },
   plugins: [],
 };

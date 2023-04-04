@@ -556,15 +556,47 @@ video {
   position: absolute;
 }
 
+.left-0 {
+  left: 0px;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
 }
 
-.h-\[214px\] {
-  height: 214px;
+.h-\[72px\] {
+  height: 72px;
 }
 
-.w-\[700px\] {
-  width: 700px;
+.w-\[170px\] {
+  width: 170px;
+}
+
+.rounded-r-full {
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+}
+
+.bg-corail-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(247 100 93 / var(--tw-bg-opacity));
+}
+
+.font-title {
+  font-family: Neue Machina;
+}
+
+.opacity-25 {
+  opacity: 0.25;
+}
+
+@font-face {
+  font-family: 'Neue Machina';
+
+  src: url('../font/NeueMachina-Ultrabold.otf') format('truetype');
+
+  font-weight: normal;
+
+  font-style: normal;
 }
