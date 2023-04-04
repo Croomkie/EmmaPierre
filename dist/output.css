@@ -552,7 +552,19 @@ video {
   }
 }
 
+.absolute {
+  position: absolute;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.h-\[214px\] {
+  height: 214px;
+}
+
+.w-\[700px\] {
+  width: 700px;
 }
