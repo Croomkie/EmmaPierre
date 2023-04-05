@@ -27,7 +27,6 @@
   <body class="bg-nude-100 font-Jost">
     <div class="mx-4 lg:mx-[200px] md:mx-[100px]">
       <div id="navbar"></div>
-    </div>
     <div class="titre text-center mb-10">
       <h1 class="text-blue-100 text-3xl font-bold">UNIQUE</h1>
     </div>
@@ -55,18 +54,18 @@
           </p>
         </div>
       </div>
+    </div>
     </section>
     <div id="footer"></div>
+    <script src="../lang/language.js"></script>
+    <script>
+      $(function () {
+        $("#navbar").load("navbar.html");
+      });
+
+      $(function () {
+        $("#footer").load("footer.html");
+      });
+    </script>
   </body>
 </html>
-
-<script src="../lang/language.js"></script>
-<script>
-  $(function () {
-    $("#navbar").load("navbar.html");
-  });
-
-  $(function () {
-    $("#footer").load("footer.html");
-  });
-</script>
