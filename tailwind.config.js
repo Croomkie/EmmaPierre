@@ -27,6 +27,10 @@ module.exports = {
       width: {
         '158': '158px',
         '197': '197px',
+      },
+      fontSize: {
+        'title': '200px',
+        'subTitle' : '40px'
       }
     },
     fontFamily: {
