@@ -26,7 +26,7 @@ module.exports = {
       },
       width: {
         '158': '158px',
-        '195': '195px',
+        '197': '197px',
       }
     },
     container: {
