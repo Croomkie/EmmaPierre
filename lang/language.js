@@ -3,10 +3,10 @@ function getBrowserLanguage() {
   }
   
   function loadTranslations(language) {
-    let jsonFile = 'lang/en.json';
+    let jsonFile = '../lang/en.json';
   
     if (language.startsWith('fr')) {
-      jsonFile = 'lang/fr.json';
+      jsonFile = '../lang/fr.json';
     }
   
     fetch(jsonFile)
