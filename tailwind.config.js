@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["*.{html,js}", "view/*.{html,js}"],
+  content: ["*.{html,js}"],
   theme: {
     extend: {
       colors: {
@@ -29,12 +29,8 @@ module.exports = {
         '197': '197px',
       }
     },
-    container: {
-      center: true,
-      margin: '200px'
-    },
     fontFamily: {
-      Jost: ["Jost"],
+      'Jost': ["Jost"],
       title: ["Neue Machina"],
     },
   },
