@@ -2,20 +2,28 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/dist/output.css" rel="stylesheet">
-    <title data-translate="title"></title>
-    <script src="js/main.js"></script>
-    <script src="lang/language.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;400;600;700;800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Tailwind -->
+  <link href="/dist/output.css" rel="stylesheet" />
+
+  <title data-translate="title"></title>
+  <script src="js/import.js" type="module"></script>
+  <script src="js/main.js"></script>
+  <script src="lang/language.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
-<body class="bg-white mx-4 lg:mx-[200px] md:mx-[100px] pt-10">
-<div id="navbar"></div>
+<body class="bg-white mx-4 lg:mx-[200px] md:mx-[100px] pt-2">
+    <header>
+        <div id="navbar"></div>
+    </header>
 
     <main>
         <!-- Section avancement du paiement--> 
@@ -40,10 +48,10 @@
                 <p class="text-center mt-2 font-Jost" data-translate="shopbar.circle.confirm"></p>
             </div>
         </div>
-        
+        <div class="md:flex justify-between">
         <div class="flex-col place-items-center">
             <!--Informations paratique-->
-            <div>
+            <div class="md:max-w-xs">
                 <h2 class="font-semibold text-center">Informations paratiques</h2>
                 <div class="bg-nude-100 border border-solid mx-1 h-28 pl-5 pt-1 mt-2 max-w-lg rounded-lg">
                     <div class="border-solid">
@@ -55,7 +63,7 @@
             </div>
 
              <!-- Details de la livraison -->
-             <div>
+             <div class="md:max-w-xs">
                 <h2 class="font-semibold text-center">Détails de la livraison</h2>
                 <div class="bg-nude-100 border border-solid mx-1 pl-5 pt-5 pb-5 mt-2 max-w-lg rounded-lg">
                     <div>
@@ -72,11 +80,11 @@
                     </div>
                 </div>
             </div>
-
+            </div>
             <!-- Details de la transaction -->
-            <div>
+            <div class="md:max-w-xs relative object-right">
                 <h2 class="font-semibold text-center">Détails de la transaction</h2>
-                <div class="bg-nude-100 border border-solid mx-1 h-20 pb-6 pl-3 pr-3 pt-1 mt-3 max-w-lg rounded-lg">
+                <div class="bg-nude-100 border border-solid mx-1 h-20 pb-6 pl-3 pr-3 pt-1 mt-3 max-w-lg rounded-lg md:">
                     <div>
                         <p class="font-medium">Lorem ipsum dolor sit amet. <strong class="text-red-500"> *2</strong></p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <strong class="text-blue-100"> 25&euro; </strong></p>
@@ -112,23 +120,18 @@
         </div>
         <p class="text-center">Merci d'avoir passé votre commande sur notre site. A bientot !</p>
     </main>
+    <footer class="md:md\:w-full">
+        <div id="foot"></div>
+    </footer>
 </body>
 
 <script src="js/import.js" type="module"></script>
 <script>
-    const btn = document.querySelector("#burger-menu");
-    const menu = document.querySelector("#mobile-menu");
-
-    // Add the "hidden" class to the menu element by default
-    menu.classList.add("hidden");
-
-    btn.addEventListener("click", () => {
-      const expanded = btn.getAttribute("aria-expanded") === "true" || false;
-      btn.setAttribute("aria-expanded", !expanded);
-      menu.classList.toggle("hidden");
-    });
     $(function () {
     $("#navbar").load("navbar.html");
+  });
+  $(function () {
+    $("#foot").load("footer.html");
   });
   </script>
 </html>
