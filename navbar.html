@@ -1,26 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title data-translate="title"></title>
 
-    <!-- Tailwind -->
-    <link href="/dist/output.css" rel="stylesheet" />
-    <script src="lang/language.js"></script>
-
-    <!-- Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Jost:wght@100;400;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-
-  <body class="bg-nude-100 font-Jost">
-    <div class="mx-8 lg:mx-[200px] mt-1">
+    <div class="mt-1">
       <!----------------------------------------- Navbar Dekstop --------------------------->
       <nav class="flex justify-between items-center">
         <img
@@ -32,31 +11,33 @@
         <div class="md:flex hidden items-center mt-1">
           <a
             href="#"
-            class="text-blue-100 block px-3 py-2 rounded-md text-base font-medium"
-            >Accueil</a
+            class="text-blue-100 block px-3 py-2 rounded-md "
+            ><span class="border-b-2 border-white absolute left-0 bottom-0 w-full transition-all duration-500 ease-out"></span>
+              Accueil
+            </a
           >
           <span class="w-[1px] h-[13px] border-l border-blue-100"> </span>
           <a
             href="#"
-            class="text-blue-100 block px-3 py-2 rounded-md text-base font-medium"
+            class="text-blue-100 block px-3 py-2 rounded-md"
             >Produits</a
           >
           <span class="w-[1px] h-[13px] border-l border-blue-100"> </span>
           <a
             href="#"
-            class="text-blue-100 px-3 py-2 rounded-md text-base font-medium"
+            class="text-blue-100 px-3 py-2 rounded-md"
             >Presentation</a
           >
           <span class="w-[1px] h-[13px] border-l border-blue-100"> </span>
           <a
             href="#"
-            class="text-blue-100 block px-3 py-2 rounded-md text-base font-medium"
+            class="text-blue-100 block px-3 py-2 rounded-md"
             >Contact</a
           >
           <span class="w-[1px] h-[13px] border-l border-blue-100"> </span>
           <a
             href="#"
-            class="text-blue-100 block px-3 py-2 rounded-md text-base font-medium"
+            class="text-blue-100 block px-3 py-2 rounded-md"
           >
             Blog
           </a>
@@ -91,7 +72,7 @@
 
           <!-- planet language -->
           <svg
-            class="w-[30px] rounded-full bg-blue-300 fill-current text-nude-100 p-[3px]"
+            class="w-[30px] rounded-full bg-blue-300 fill-current text-nude-100 p-[3px] cursor-pointer"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -103,12 +84,12 @@
           </svg>
 
           <!----------------------------------------- Navbar Mobile --------------------------->
-
+         
           <div class="md:hidden">
             <!-- burger menu -->
             <svg
               id="burger-menu"
-              class="w-[30px] fill-current text-blue-300"
+              class="w-[30px] fill-current text-blue-300 cursor-pointer"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 448 512"
             >
@@ -155,8 +136,6 @@
     </div>
   </body>
 
-  <script src="js/import.js" type="module"></script>
-
   <!-- Vous pouvez ajouter ce script pour faire fonctionner le menu mobile -->
   <script>
     const btn = document.querySelector("#burger-menu");
@@ -171,4 +150,4 @@
       menu.classList.toggle("hidden");
     });
   </script>
-</html>
+
