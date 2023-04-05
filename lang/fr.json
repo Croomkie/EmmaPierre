@@ -1,10 +1,15 @@
 {
-    "company": "EmmaPierre",
-    "title": "EmmaPierre",
-    "home": "Accueil",
-    "shopbar.circle.shop": "Panier",
-    "shopbar.circle.paid": "Paiement",
-    "shopbar.circle.confirm": "Confirmation",
-    "title.my.shop": "Votre panier"
-  }
-  
+  "company": "EmmaPierre",
+  "title": "EmmaPierre",
+  "home": "Accueil",
+  "shopbar.circle.shop": "Panier",
+  "shopbar.circle.paid": "Paiement",
+  "shopbar.circle.confirm": "Confirmation",
+  "title.my.shop": "Votre panier",
+  "title.my.recap": "Récapitulatif",
+  "button.nextstep": "Etape suivante",
+  "text.shop.total" : "Sous-total (6 articles):",
+  "title.my.suggestion" : "Produits liés au articles",
+  "text.shop.suggestion.card.title": "Lorem ipsum dolor sit.",
+  "text.shop.suggestion.card.product" : "Voir le produit"
+}
