@@ -19,11 +19,12 @@ module.exports = {
       },
     },
     container: {
-      padding: "200px",
+      center: true,
+      margin: '200px'
     },
     fontFamily: {
-      'Jost': ["Jost"],
-      'title': ["Neue Machina"],
+      Jost: ["Jost"],
+      title: ["Neue Machina"],
     },
   },
   plugins: [],
