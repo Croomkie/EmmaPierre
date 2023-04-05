@@ -1,6 +1,10 @@
 {
     "company": "EmmaPierre",
     "title": "EmmaPierre",
-    "home": "Accueil"
+    "home": "Accueil",
+    "shopbar.circle.shop": "Panier",
+    "shopbar.circle.paid": "Paiement",
+    "shopbar.circle.confirm": "Confirmation",
+    "title.my.shop": "Votre panier"
   }
   
