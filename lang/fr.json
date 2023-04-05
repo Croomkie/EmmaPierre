@@ -11,5 +11,7 @@
   "text.shop.total" : "Sous-total (6 articles):",
   "title.my.suggestion" : "Produits liés au articles",
   "text.shop.suggestion.card.title": "Lorem ipsum dolor sit.",
-  "text.shop.suggestion.card.product" : "Voir le produit"
+  "text.shop.suggestion.card.product" : "Voir le produit",
+  "title.contact" : "CONTACT",
+  "button.contact.send" : "Envoyer"
 }
