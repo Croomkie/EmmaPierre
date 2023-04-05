@@ -14,9 +14,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 
-<body class="bg-white mx-4 lg:mx-[200px] md:mx-[100px]">
+<body class="bg-white mx-4 lg:mx-[200px] md:mx-[100px] pt-10">
+<div id="navbar"></div>
+
     <main>
         <!-- Section avancement du paiement--> 
+        <div class="flex justify-center gap-4 relative mb-4">
+            <div class="barre-horizontale"></div>
+            <div class="flex flex-col items-center mx-2">
+                <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center">
+                    <span class="text-nude-100 text-center text-lg">1</span>
+                </div>
+                <p class="text-center mt-2 font-Jost" data-translate="shopbar.circle.shop"></p>
+            </div>
+            <div class="flex flex-col items-center mx-2">
+                <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center">
+                    <span class="text-nude-100 text-center text-lg">2</span>
+                </div>
+                <p class="text-center mt-2 font-Jost" data-translate="shopbar.circle.paid"></p>
+            </div>
+            <div class="flex flex-col items-center mx-2">
+                <div class="bg-gris-100 w-16 h-16 rounded-full flex items-center justify-center">
+                    <span class="text-nude-100 text-center text-lg">3</span>
+                </div>
+                <p class="text-center mt-2 font-Jost" data-translate="shopbar.circle.confirm"></p>
+            </div>
+        </div>
         
         <div class="flex-col place-items-center">
             <!--Informations paratique-->
@@ -92,5 +115,20 @@
 </body>
 
 <script src="js/import.js" type="module"></script>
+<script>
+    const btn = document.querySelector("#burger-menu");
+    const menu = document.querySelector("#mobile-menu");
 
+    // Add the "hidden" class to the menu element by default
+    menu.classList.add("hidden");
+
+    btn.addEventListener("click", () => {
+      const expanded = btn.getAttribute("aria-expanded") === "true" || false;
+      btn.setAttribute("aria-expanded", !expanded);
+      menu.classList.toggle("hidden");
+    });
+    $(function () {
+    $("#navbar").load("navbar.html");
+  });
+  </script>
 </html>
