@@ -17,6 +17,17 @@ module.exports = {
         "gris-200": "#2E2B31",
         "gris-300": "#1D1923",
       },
+      lineHeight: {
+        'H1-52px': '52px',
+        '12': '3rem',
+      },
+      height: {
+        '166': '166px',
+      },
+      width: {
+        '158': '158px',
+        '195': '195px',
+      }
     },
     container: {
       padding: "200px",
