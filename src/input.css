@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Code CSS pour personaliser le caroussel */
+
+.flickity-page-dots .dot {
+  background: #F7645D;
+}
+
+.flickity-page-dots .dot.is-selected {
+  background: #BD3E43;
+}
+
+/* ****************************** */
+
 @font-face {
   font-family: 'Neue Machina';
   src: url('../font/NeueMachina-Ultrabold.otf') format('truetype');

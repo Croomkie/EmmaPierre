@@ -14,15 +14,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flickity@2.2.2/dist/flickity.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/flickity@2.2.2/dist/flickity.pkgd.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flickity@2.2.2/dist/flickity.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/flickity@2.2.2/dist/flickity.pkgd.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
-  <body class="bg-nude-100 font-Jost mx-4 lg:mx-[200px] md:mx-[100px]">
-    <div class="flex flex-col gap-y-6">
+  <body class="bg-nude-100 font-Jost lg:mx-[200px] md:mx-[100px]">
+    <div class="mx-4" id="navbar"></div>
+    <div class="mx-4 flex flex-col gap-y-6">
       <div
         class="absolute w-5/12 h-[72px] bg-corail-100 left-0 rounded-r-full opacity-25 -z-10"
       ></div>
@@ -86,8 +85,8 @@
         <p class="font-extrabold text-blue-100 text-xl">
           Découvrez nos articles à la une
         </p>
-        <div class="flex items-center gap-x-5 overflow-hidden">
-          <div class="rounded-xl bg-white w-[270px]">
+        <div class="caroussel" data-flickity='{ "freeScroll": true, "contain": true, "prevNextButtons": true, "pageDots": true }'>
+          <div class="carousel-cell mr-4 rounded-xl bg-white w-[270px]">
             <img
               src="images/images/photo4.jpeg"
               alt="image"
@@ -100,7 +99,7 @@
               <p class="mb-4 text-blue-100 font-extrabold">50 €</p>
             </div>
           </div>
-          <div class="rounded-xl bg-white w-[270px]">
+          <div class="carousel-cell mr-4 rounded-xl bg-white w-[270px]">
             <img
               src="images/images/photo4.jpeg"
               alt="image"
@@ -113,9 +112,91 @@
               <p class="mb-4 text-blue-100 font-extrabold">50 €</p>
             </div>
           </div>
+        <div class="carousel-cell mr-4 rounded-xl bg-white w-[270px]">
+            <img src="images/images/photo4.jpeg" alt="image" class="rounded-t-xl object-cover" />
+            <div class="mt-4 mx-4 flex flex-col gap-y-4">
+                <p class="text-blue-100">
+                    Bracelet Family Black en tourmaline 15 cm
+                </p>
+                <p class="mb-4 text-blue-100 font-extrabold">50 €</p>
+            </div>
+        </div>
+        <div class="carousel-cell mr-4 rounded-xl bg-white w-[270px]">
+            <img src="images/images/photo4.jpeg" alt="image" class="rounded-t-xl object-cover" />
+            <div class="mt-4 mx-4 flex flex-col gap-y-4">
+                <p class="text-blue-100">
+                    Bracelet Family Black en tourmaline 15 cm
+                </p>
+                <p class="mb-4 text-blue-100 font-extrabold">50 €</p>
+            </div>
+        </div>
+        <div class="carousel-cell mr-4 rounded-xl bg-white w-[270px]">
+            <img src="images/images/photo4.jpeg" alt="image" class="rounded-t-xl object-cover" />
+            <div class="mt-4 mx-4 flex flex-col gap-y-4">
+                <p class="text-blue-100">
+                    Bracelet Family Black en tourmaline 15 cm
+                </p>
+                <p class="mb-4 text-blue-100 font-extrabold">50 €</p>
+            </div>
+        </div>
+        <div class="carousel-cell mr-4 rounded-xl bg-white w-[270px]">
+            <img src="images/images/photo4.jpeg" alt="image" class="rounded-t-xl object-cover" />
+            <div class="mt-4 mx-4 flex flex-col gap-y-4">
+                <p class="text-blue-100">
+                    Bracelet Family Black en tourmaline 15 cm
+                </p>
+                <p class="mb-4 text-blue-100 font-extrabold">50 €</p>
+            </div>
+        </div>
+        <div class="carousel-cell mr-4 rounded-xl bg-white w-[270px]">
+            <img src="images/images/photo4.jpeg" alt="image" class="rounded-t-xl object-cover" />
+            <div class="mt-4 mx-4 flex flex-col gap-y-4">
+                <p class="text-blue-100">
+                    Bracelet Family Black en tourmaline 15 cm
+                </p>
+                <p class="mb-4 text-blue-100 font-extrabold">50 €</p>
+            </div>
+        </div>
+        </div>
+        <div class="text-center">
+            <button class="mt-8 text-nude-100 bg-blue-100 px-4 py-3 rounded-xl">
+                Découvrir maintenant
+            </button>
         </div>
       </div>
     </div>
+    <div class="flex flex-col gap-y-6 mt-6">
+        <p class="mx-4 text-blue-100 font-extrabold text-xl">Nos valeurs</p>
+        <div class="w-full bg-nude-300 text-blue-100 px-5 py-[40px] text-center">
+            Découvrez nos bijoux faits à la main dans notre atelier lyonnais en éditions limitées, voire même en unique
+            exemplaire
+            pour une exclusivité totale. Chaque matière est choisie avec soin pour garantir une qualité exceptionnelle et
+            pour vous
+            offrir une touche unique qui vous distinguera. Opter pour l'artisanat, c'est contribuer au maintien du
+            savoir-faire et
+            de l'emploi en France. Nous sommes fiers de vous proposer des bijoux de haute qualité, fabriqués avec passion et
+            expertise. Merci de votre soutien !
+        </div>
+    </div>
+    <div class="mx-4 mt-6">
+        <div class="grid grid-flow-row grid-cols-12">
+            <div class="col-span-6 flex flex-col gap-y-4 justify-center bg-white rounded-xl text-center">
+              <div class="h-12 w-12 text-center">
+                <img src="images/PHOTO/25147.jpg" alt="image" class="rounded-full w-full h-full">
+              </div>
+            </div>
+        </div>
+        <div class="grid grid-flow-row grid-cols-12">
+            <div class="col-span-6 col-start-7">
+            
+            </div>
+        </div>
+        <div class="grid grid-flow-row grid-cols-12">
+            <div class="col-span-6">
+         
+            </div>
+        </div>
+      </div>
   </body>
 </html>
 
