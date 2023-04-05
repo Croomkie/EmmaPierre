@@ -17,13 +17,20 @@ module.exports = {
         "gris-200": "#2E2B31",
         "gris-300": "#1D1923",
       },
-    },
-    container: {
-      center: true,
-      margin: '200px'
+      lineHeight: {
+        'H1-52px': '52px',
+        '12': '3rem',
+      },
+      height: {
+        '166': '166px',
+      },
+      width: {
+        '158': '158px',
+        '197': '197px',
+      }
     },
     fontFamily: {
-      Jost: ["Jost"],
+      'Jost': ["Jost"],
       title: ["Neue Machina"],
     },
   },
