@@ -24,36 +24,48 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
 
-  <body class="bg-nude-100">
+  <body class="bg-nude-100 font-Jost">
     <div class="mx-4 lg:mx-[200px] md:mx-[100px]">
       <div id="navbar"></div>
+    <div class="titre text-center mb-10">
+      <h1 class="text-blue-100 text-3xl font-bold">UNIQUE</h1>
     </div>
     <section>
       <div>
-        <p
-          class="flex justify-center text-center items-center bg-nude-300 p-[100px] w-full"
-        >
-          Collection de bijoux en exemplaire limité. Que c’est bon de laisser
-          libre cours à ces immagination, ces créations uniques sont les fruits
-          de mes recherches constantes sur l’alliance entre formes et couleurs
-          pour créer un bijoux harmonieux mais original avec des matières telles
-          que cristal, pièrre dure, fine, corail, ... liste non exhaustive.
-          Comme leur nom l’indique, il sont souvent produit en un seul exemple,
-          donc premier arrivé, premier servi.
-        </p>
+        <div>
+          <p
+            class="flex justify-center text-center items-center bg-nude-300 p-[30px] text-blue-100 w-full text-[20px] mb-6"
+          >
+            Collection de bijoux en exemplaire limité. Que c’est bon de laisser
+            libre cours à ces immagination, ces créations uniques sont les
+            fruits de mes recherches constantes sur l’alliance entre formes et
+            couleurs pour créer un bijoux harmonieux mais original avec des
+            matières telles que cristal, pièrre dure, fine, corail, ... liste
+            non exhaustive. Comme leur nom l’indique, il sont souvent produit en
+            un seul exemple, donc premier arrivé, premier servi.
+          </p>
+        </div>
+        <div>
+          <p
+            class="w-[303px] mx-auto flex items-center justify-center text-center text-blue-100 font-semibold"
+          >
+            Pas de sous catégories dans cette collections, les produits seront
+            rajoutés au fur et à mesure de la production.
+          </p>
+        </div>
       </div>
+    </div>
     </section>
     <div id="footer"></div>
+    <script src="../lang/language.js"></script>
+    <script>
+      $(function () {
+        $("#navbar").load("navbar.html");
+      });
+
+      $(function () {
+        $("#footer").load("footer.html");
+      });
+    </script>
   </body>
 </html>
-
-<script src="../lang/language.js"></script>
-<script>
-  $(function () {
-    $("#navbar").load("navbar.html");
-  });
-
-  $(function () {
-    $("#footer").load("footer.html");
-  });
-</script>
