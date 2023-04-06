@@ -18,11 +18,9 @@
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <link rel="stylesheet" href="../dist/output.css" />
   </head>
-  <body class="bg-nude-100 lg:mx-[200px] md:mx-[100px] pt-2">
-    <header>
-      <div id="navbar"></div>
-    </header>
-    <main>
+  <body class="bg-nude-100 font-Jost">
+    <div class="mx-4 lg:mx-[200px] md:mx-[100px]" id="navbar"></div>
+    <main class="lg:mx-[200px] md:mx-[100px] pt-2">
       <!--Titre-->
       <div class="titre text-center mb-10">
         <h1 class="text-blue-100 text-3xl font-bold">COULEUR</h1>
@@ -275,4 +273,15 @@
       });
     </script>
   </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script>
+    $(function () {
+      $("#navbar").load("navbar.html");
+    });
+    $(function () {
+      $("#footer").load("footer.html");
+    });
+  </script>
 </html>
+>>>>>>> b7525905a314cec128d88b85001efd373177de69
