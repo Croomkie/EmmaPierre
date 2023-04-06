@@ -26,6 +26,54 @@
       <div class="titre text-center mb-10">
         <h1 class="text-blue-100 text-3xl font-bold">COULEUR</h1>
       </div>
+
+<!-------------------------------------------- Filtres Produits  -------------------------------------------->
+  
+      <div class="justify-center mt-10 font-bold mb-10 ml-5">
+      <button id="dropdownDefault" data-dropdown-toggle="dropdown"
+        class="group relative h-12 w-48 overflow-hidden rounded-lg bg-corail-50 text-lg shadow"
+        type="button">
+        <p class="text-blue-100 mt-1">Filtrage</p>
+      </button>
+
+      <!-- Dropdown menu -->
+      <div id="dropdown" class="z-10 hidden w-56 p-3 bg-white rounded-lg shadow dark:bg-gray-700">
+        <h6 class="mb-3 text-sm font-medium text-gray-900 dark:text-white">
+          Category
+        </h6>
+        <ul class="space-y-2 text-sm" aria-labelledby="dropdownDefault">
+        
+          <li class="flex items-center">
+            <input id="logitech" type="checkbox" value="" checked
+              class="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500" />
+
+            <label for="logitech" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100">
+              Boucles d'oreilles (97)
+            </label>
+          </li>
+
+          <li class="flex items-center">
+            <input id="msi" type="checkbox" value="" checked
+              class="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500" />
+
+            <label for="msi" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100">
+              Bracelets (97)
+            </label>
+          </li>
+
+          <li class="flex items-center">
+            <input id="bosch" type="checkbox" value="" checked
+              class="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500" />
+
+            <label for="bosch" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100">
+              Colliers (176)
+            </label>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+
       <!--Carte-->
       <div class="flex justify-around">
         <!--Ligne1-->
@@ -38,7 +86,7 @@
           />
           <div class="bg-white pb-0 mb-4 rounded-b-xl pl-2 -mt-2">
             <p class="text-red-500 font-normal">Apatites</p>
-            <p class="font-light mb-3">Aqua azura</p>
+            <p class="mb-3 text-blue-100">Aqua azura</p>
           </div>
         </div>
         <div class="mr-2">
@@ -50,7 +98,7 @@
           />
           <div class="bg-white pb-0 mb-4 rounded-b-xl pl-2 -mt-2">
             <p class="text-red-500 font-normal">Corail</p>
-            <p class="font-light mb-3">Girl on Fire</p>
+            <p class="mb-3 text-blue-100">Girl on Fire</p>
           </div>
         </div>
         <div class="mr-6 -mt-3">
@@ -62,7 +110,7 @@
           />
           <div class="bg-white pb-0 mb-4 rounded-b-xl pl-2 -mt-2">
             <p class="text-red-500 font-normal">Tourmalines</p>
-            <p class="font-light mb-3">Spring time</p>
+            <p class="mb-3 text-blue-100">Spring time</p>
           </div>
         </div>
       </div>
@@ -77,7 +125,7 @@
           />
           <div class="bg-white pb-0 mb-4 rounded-b-xl pl-2 -mt-2">
             <p class="text-red-500 font-normal">Topazes</p>
-            <p class="font-light mb-3">Jaipur</p>
+            <p class="mb-3 text-blue-100">Jaipur</p>
           </div>
         </div>
         <div class="mr-2">
@@ -89,7 +137,7 @@
           />
           <div class="bg-white pb-0 mb-4 rounded-b-xl pl-2 -mt-2">
             <p class="text-red-500 font-normal">RUBIS</p>
-            <p class="font-light mb-3">Rouge carmin</p>
+            <p class="mb-3 text-blue-100">Rouge carmin</p>
           </div>
         </div>
         <div class="mr-6 -mt-3">
@@ -101,7 +149,7 @@
           />
           <div class="bg-white pb-0 mb-4 rounded-b-xl pl-2 -mt-2">
             <p class="text-red-500 font-normal">Amazonites</p>
-            <p class="font-light mb-3">Mauritius</p>
+            <p class="mb-3 text-blue-100">Mauritius</p>
           </div>
         </div>
       </div>
@@ -116,7 +164,7 @@
           />
           <div class="bg-white pb-0 mb-4 rounded-b-xl pl-2 -mt-2">
             <p class="text-red-500 font-normal">Perles noires</p>
-            <p class="font-light mb-4">Bora-Bora</p>
+            <p class="mb-4 text-blue-100">Bora-Bora</p>
           </div>
         </div>
         <div class="mr-2">
@@ -128,7 +176,7 @@
           />
           <div class="bg-white pb-1 mb-4 rounded-b-xl pl-2 -mt-2">
             <p class="text-red-500 font-normal">Emeraude</p>
-            <p class="font-light">Amazonie</p>
+            <p class="text-blue-100">Amazonie</p>
           </div>
         </div>
         <div class="mr-6 -mt-3">
@@ -140,7 +188,7 @@
           />
           <div class="bg-white pb-0 mb-6 rounded-b-xl pl-2 -mt-2">
             <p class="text-red-500 font-normal">Saphirs</p>
-            <p class="font-light mb-4">Sunset</p>
+            <p class="mb-4 text-blue-100">Sunset</p>
           </div>
         </div>
       </div>
@@ -155,7 +203,7 @@
           />
           <div class="bg-white pb-0 mb-4 rounded-b-xl pl-2 -mt-2">
             <p class="text-red-500 font-normal">Fluorites</p>
-            <p class="font-light mb-4">Rainbow</p>
+            <p class="mb-4 text-blue-100">Rainbow</p>
           </div>
         </div>
         <div class="mr-2">
@@ -167,7 +215,7 @@
           />
           <div class="bg-white pb-0 mb-4 rounded-b-xl pl-2 -mt-2">
             <p class="text-red-500 font-normal">Tourmalines</p>
-            <p class="font-light mb-4">Jardins d'hiver</p>
+            <p class="mb-4 text-blue-100">Jardins d'hiver</p>
           </div>
         </div>
         <div class="mr-6 -mt-3">
@@ -179,7 +227,7 @@
           />
           <div class="bg-white pb-0 mb-4 rounded-b-xl pl-2 -mt-2">
             <p class="text-red-500 font-normal">Opales</p>
-            <p class="font-light mb-3">Rose doudou</p>
+            <p class="mb-3 text-blue-100">Rose doudou</p>
           </div>
         </div>
       </div>
@@ -194,7 +242,7 @@
           />
           <div class="bg-white pb-0 mb-4 rounded-b-xl pl-2 -mt-2">
             <p class="text-red-500 font-normal">Saphirs bleus</p>
-            <p class="font-light mb-3">Ocean</p>
+            <p class="mb-3 text-blue-100">Ocean</p>
           </div>
         </div>
         <div class="mr-2">
@@ -206,7 +254,7 @@
           />
           <div class="bg-white pb-0 mb-4 rounded-b-xl pl-2 -mt-2">
             <p class="text-red-500 font-normal">Labradorites</p>
-            <p class="font-light mb-3">London</p>
+            <p class="mb-3 text-blue-100">London</p>
           </div>
         </div>
         <div class="mr-6 -mt-3">
@@ -218,7 +266,7 @@
           />
           <div class="bg-white pb-0 mb-4 rounded-b-xl pl-2 -mt-2">
             <p class="text-red-500 font-normal">Lapis-lazuli</p>
-            <p class="font-light mb-3">Star night</p>
+            <p class="mb-3 text-blue-100">Star night</p>
           </div>
         </div>
       </div>
@@ -233,7 +281,7 @@
           />
           <div class="bg-white pb-1 mb-4 rounded-b-xl pl-2 -mt-2">
             <p class="text-red-500 font-normal">Nacre</p>
-            <p class="font-light">Marquise</p>
+            <p class="text-blue-100">Marquise</p>
           </div>
         </div>
         <div class="mr-2">
@@ -245,7 +293,7 @@
           />
           <div class="bg-white pb-1 mb-4 rounded-b-xl pl-2 -mt-2">
             <p class="text-red-500 font-normal">Perles noires</p>
-            <p class="font-light">Bora-Bora</p>
+            <p class="text-blue-100">Bora-Bora</p>
           </div>
         </div>
         <div class="mr-6 -mt-3">
@@ -257,12 +305,12 @@
           />
           <div class="bg-white pb-1 mb-4 rounded-b-xl pl-2 -mt-2">
             <p class="text-red-500 font-normal">Apatites</p>
-            <p class="font-light">Aqua azura</p>
+            <p class="text-blue-100">Aqua azura</p>
           </div>
         </div>
       </div>
     </main>
-    <div id="footer"></div>
+    <footer id="foot"></footer>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 

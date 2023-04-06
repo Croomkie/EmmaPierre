@@ -17,10 +17,11 @@
 
   <body class="bg-nude-100 font-Jost">
     
-      <div id="navbar"></div>
+      <div class="mx-4 lg:mx-[200px] md:mx-[100px]" id="navbar"></div>
       <div class="titre text-center mb-10">
         <h1 class="text-blue-100 text-3xl font-bold">IMPERTINENTES</h1>
         </div>
+      
     <section>
         <div>
           <div>
@@ -47,8 +48,57 @@
         </div>
       </div>
       </section>
+
+<!-------------------------------------------- Filtres Produits  -------------------------------------------->
+  
+      <div class="justify-center mt-10 font-bold ml-56">
+      <button id="dropdownDefault" data-dropdown-toggle="dropdown"
+        class="group relative h-12 w-48 overflow-hidden rounded-lg bg-corail-50 text-lg shadow"
+        type="button">
+        <p class="text-blue-100 mt-1">Filtrage</p>
+      </button>
+
+      <!-- Dropdown menu -->
+      <div id="dropdown" class="z-10 hidden w-56 p-3 bg-white rounded-lg shadow dark:bg-gray-700">
+        <h6 class="mb-3 text-sm font-medium text-gray-900 dark:text-white">
+          Category
+        </h6>
+        <ul class="space-y-2 text-sm" aria-labelledby="dropdownDefault">
+        
+          <li class="flex items-center">
+            <input id="logitech" type="checkbox" value="" checked
+              class="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500" />
+
+            <label for="logitech" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100">
+              Boucles d'oreilles (97)
+            </label>
+          </li>
+
+          <li class="flex items-center">
+            <input id="msi" type="checkbox" value="" checked
+              class="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500" />
+
+            <label for="msi" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100">
+              Bracelets (97)
+            </label>
+          </li>
+
+          <li class="flex items-center">
+            <input id="bosch" type="checkbox" value="" checked
+              class="w-4 h-4 bg-gray-100 border-gray-300 rounded text-primary-600 focus:ring-primary-500 dark:focus:ring-primary-600 dark:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500" />
+
+            <label for="bosch" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-100">
+              Colliers (176)
+            </label>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+
+
       <section>
-        <div class="mx-4 lg:mx-[200px] md:mx-[100px] mt-20">
+        <div class="mx-4 lg:mx-[200px] md:mx-[100px] mt-10">
            <!--Carte-->
       <div class="flex justify-around">
         <!--Ligne1-->
