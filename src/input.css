@@ -12,6 +12,10 @@
   background: #BD3E43;
 }
 
+*{
+  scroll-behavior: smooth;
+}
+
 /* ****************************** */
 
 /* Panier */

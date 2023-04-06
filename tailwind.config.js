@@ -19,26 +19,26 @@ module.exports = {
         "gris-300": "#1D1923",
       },
       lineHeight: {
-        'H1-52px': '52px',
-        '12': '3rem',
+        "H1-52px": "52px",
+        12: "3rem",
       },
       height: {
-        '166': '166px',
+        166: "166px",
       },
       width: {
-        '158': '158px',
-        '197': '197px',
+        158: "158px",
+        197: "197px",
       },
       fontSize: {
-        'title': '200px',
-        'subTitle' : '40px'
-      }
+        title: "200px",
+        subTitle: "40px",
+      },
     },
     fontFamily: {
-      'Jost': ["Jost"],
+      Jost: ["Jost"],
       title: ["Neue Machina"],
     },
   },
-  plugins: [],
+  plugins: [require("flowbite/plugin")],
 };
 
