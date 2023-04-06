@@ -19,11 +19,9 @@
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
-<body class="bg-nude-100 lg:mx-[200px] md:mx-[100px] pt-2">
-    <header>
-        <div id="navbar"></div>
-    </header>
-    <main>
+<body class="bg-nude-100">
+    <main class="bg-nude-100 lg:mx-[200px] md:mx-[100px] pt-2">
+        <header id="navbar"></header>
         <!--Titre-->
         <div>
             <h1 class="text-blue-100 text-center font-bold mb-4">COULEUR</h1>
@@ -168,18 +166,17 @@
             </div> 
         </div>
     </main>
-    <footer class="md:max-w-screen-2xl">
-        <div id="foot"></div>
-    </footer>
-</body>
+    <footer id="foot" md:class="w-full"></footer>
 
-<script src="js/import.js" type="module"></script>
-<script>
-    $(function () {
-    $("#navbar").load("navbar.html");
-  });
-  $(function () {
-    $("#foot").load("footer.html");
-  });
-  </script>
+    <script src="js/import.js" type="module"></script>
+    <script>
+        $(function () {
+            $("#navbar").load("navbar.html");
+        });
+        $(function () {
+            $("#foot").load("footer.html");
+        });
+    </script>
+
+</body>
 </html>
