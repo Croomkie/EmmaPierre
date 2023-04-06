@@ -43,6 +43,6 @@ module.exports = {
       title: ["Neue Machina"],
     },
   },
-  plugins: [require("flowbite/plugin")],
+  plugins: [require('flowbite/plugin.js')],
 };
 
