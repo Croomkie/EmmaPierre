@@ -10,6 +10,7 @@ module.exports = {
         "corail-100": "#F7645D",
         "corail-200": "#EC5052",
         "corail-300": "#BD3E43",
+        "corail-50": "#F2C5B5",
         "nude-100": "#F0E5D3",
         "nude-200": "#E9DBC1",
         "nude-300": "#DCCDB6",
