@@ -13,5 +13,18 @@
   "text.shop.suggestion.card.title": "Lorem ipsum dolor sit.",
   "text.shop.suggestion.card.product" : "Voir le produit",
   "title.contact" : "CONTACT",
-  "button.contact.send" : "Envoyer"
+  "button.contact.send" : "Envoyer",
+  "title.payement.creditcard": "Informations sur la carte de crédit",
+  "text.payement.form.number": "Numéro de carte",
+  "text.payement.form.cvv" : "CVV",
+  "text.payement.form.incumbent" : "Nom du titulaire de la carte",
+  "text.payement.form.expire" : "Date expiration",
+  "title.payement.delivery": "Adresse de livraison",
+  "title.payement.mode.delivery" : "Choix du mode de livraison",
+  "text.payement.delivery.form.name" : "Nom prénom",
+  "text.payement.delivery.form.adresse" : "Adresse",
+  "text.payement.delivery.form.tel" : "Téléphone",
+  "text.payement.delivery.form.ville" : "Ville",
+  "text.payement.delivery.form.cp" : "Code postale",
+  "title.payement.recap": "Récapitulatif de la commande"
 }
