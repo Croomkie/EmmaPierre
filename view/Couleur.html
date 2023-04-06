@@ -246,19 +246,17 @@
         </div>
       </div>
     </main>
-    <footer class="md:max-w-screen-2xl">
-      <div id="foot"></div>
-    </footer>
-  </body>
+    <footer id="foot" md:class="w-full"></footer>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/import.js" type="module"></script>
+    <script>
+        $(function () {
+            $("#navbar").load("navbar.html");
+        });
+        $(function () {
+            $("#foot").load("footer.html");
+        });
+    </script>
 
-  <script>
-    $(function () {
-      $("#navbar").load("navbar.html");
-    });
-    $(function () {
-      $("#foot").load("footer.html");
-    });
-  </script>
+</body>
 </html>
