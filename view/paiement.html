@@ -129,7 +129,7 @@
                     <span class="underline-bar"></span>
                 </div>
 
-                <div class="md:w-full">
+                <a class="md:w-full">
                     <section class="font-Jost flex flex-col gap-4 bg-nude-100 p-4 rounded-lg mb-4">
                         <article class="flex flex-col gap-4">
                             <div class="flex items-center gap-4">
@@ -190,9 +190,11 @@
                             <span class="underline-bar-article"></span>
                         </article>
                     </section>
+                    <a href="confirmationPaiement.html"></a>
                     <button
                         class="float-right rounded-full bg-blue-100 text-nude-100 px-3 py-1 mb-4 hover:bg-nude-100 hover:text-blue-100 transition-colors duration-200"
                         data-translate="button.nextstep"></button>
+                </a>
                 </div>
             </div>
         </section>
@@ -276,7 +278,7 @@
             <span class="underline-bar"></span>
         </div>
 
-        <div class="md:w-full md:hidden">
+        <a class="md:w-full md:hidden">
             <section class="font-Jost flex flex-col gap-4 bg-nude-100 p-4 rounded-lg mb-4">
                 <article class="flex flex-col gap-4">
                     <div class="flex items-center gap-4">
@@ -343,27 +345,28 @@
                     <span class="underline-bar-article"></span>
                 </article>
             </section>
+            <a href="confirmationPaiement.html">
             <button
                 class="float-right rounded-full bg-blue-100 text-nude-100 px-3 py-1 mb-4 hover:bg-nude-100 hover:text-blue-100 transition-colors duration-200"
                 data-translate="button.nextstep"></button>
+        </a>
         </div>
 
 
     </main>
 
     <footer id="footer"></footer>
-
-    <script src="../lang/language.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-    <script>
-        $(function () {
-            $("#navbar").load("navbar.html");
-        });
-        $(function () {
-            $("#footer").load("footer.html");
-        });
-    </script>
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+  $(function () {
+    $("#navbar").load("navbar.html");
+  });
+
+  $(function () {
+    $("#footer").load("footer.html");
+  });
+</script>
 
 </html>
