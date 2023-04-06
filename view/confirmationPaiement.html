@@ -15,8 +15,8 @@
 </head>
 
 <body>
-    <main class=" mx-4 lg:mx-[200px] md:mx-[100px] pt-2">
-        <header id="navbar"></header>
+    <main class="mx-4 lg:mx-[200px] md:mx-[100px] pt-2">
+        <header class="mb-28" id="navbar"></header>
         <!-- Ligne étape commande -->
         <div class="flex justify-center gap-4 relative mb-8 md:gap-60">
             <div class="barre-horizontale"></div>
@@ -27,13 +27,13 @@
                 <p class="text-center mt-2 font-Jost" data-translate="shopbar.circle.shop"></p>
             </div>
             <div class="flex flex-col items-center mx-2">
-                <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center">
+                <div class="bg-gris-100 w-16 h-16 rounded-full flex items-center justify-center">
                     <span class="text-nude-100 text-center text-lg">2</span>
                 </div>
                 <p class="text-center mt-2 font-Jost" data-translate="shopbar.circle.paid"></p>
             </div>
             <div class="flex flex-col items-center mx-2">
-                <div class="bg-gris-100 w-16 h-16 rounded-full flex items-center justify-center">
+                <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center">
                     <span class="text-nude-100 text-center text-lg">3</span>
                 </div>
                 <p class="text-center mt-2 font-Jost" data-translate="shopbar.circle.confirm"></p>
@@ -45,14 +45,19 @@
                 <!-- Infos pratiques -->
                 <div class="mb-8">
                     <div class="mb-4">
-                        <h3 class="text-gris-300 font-Jost font-semibold">Informations paratiques</h3>
+                        <h3 class="text-gris-300 font-Jost font-semibold">
+                            Informations paratiques
+                        </h3>
                         <span class="underline-bar"></span>
                     </div>
                     <article class="text-center bg-nude-100 rounded-lg">
-                        <p class="font-semibold"> Adresse :</p>
+                        <p class="font-semibold">Adresse :</p>
                         <p>10 Avenue des Champs-Elysée, 69000, Lyon</p>
                         <p class="font-semibold">Livré par :</p>
-                        <p>Mondial relay <span class="font-semibold text-blue-100">3,5€</span></p>
+                        <p>
+                            Mondial relay
+                            <span class="font-semibold text-blue-100">3,5€</span>
+                        </p>
                         <p>Delais de livraison</p>
                         <p>Delais de livraison</p>
                     </article>
@@ -61,7 +66,9 @@
                 <!-- Livraison info -->
                 <div class="mb-8">
                     <div class="mb-4">
-                        <h3 class="text-gris-300 font-Jost font-semibold">Détails de la livraison</h3>
+                        <h3 class="text-gris-300 font-Jost font-semibold">
+                            Détails de la livraison
+                        </h3>
                         <span class="underline-bar"></span>
                     </div>
 
@@ -72,9 +79,6 @@
                     </article>
                 </div>
             </section>
-
-
-
 
             <!-- Récapitulatif commande desktop -->
             <div class="md:w-full">
@@ -154,11 +158,14 @@
             </div>
         </div>
 
+
+
         <div class="flex justify-center">
             <button class="text-white bg-blue-100 mt-6 rounded-full p-2 place-items-center mb-3">Valider et
                 Payer</button>
         </div>
         <p class="text-center">Merci d'avoir passé votre commande sur notre site. A bientot !</p>
+
     </main>
 
     <p data-translate="home"></p>
@@ -166,18 +173,17 @@
     <footer class="md:md\:w-full">
         <div id="foot"></div>
     </footer>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="../lang/language.js"></script>
-    <script>
-        $(function () {
-            $("#navbar").load("navbar.html");
-        });
-
-        $(function () {
-            $("#foot").load("footer.html");
-        });
-    </script>
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="../lang/language.js"></script>
+<script>
+    $(function () {
+        $("#navbar").load("navbar.html");
+    });
+    $(function () {
+        $("#foot").load("footer.html");
+    });
+</script>
 
 </html>
