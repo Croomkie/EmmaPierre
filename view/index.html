@@ -4,24 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Tailwind -->
-    <link href="/dist/output.css" rel="stylesheet" />
-
     <title data-translate="title"></title>
-    <script src="js/import.js" type="module"></script>
-    <script src="lang/language.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Jost:wght@100;400;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="../dist/output.css">
   </head>
 
   <body class="bg-nude-100 font-Jost">
@@ -48,9 +37,15 @@
         </p>
         <div>
           <button
-            class="md:w-1/2 text-nude-100 bg-blue-100 px-[7px] md:px-3 md:py-4 py-[10px] rounded-3xl mb-20"
+            class="group relative h-12 w-48 overflow-hidden rounded-lg bg-blue-100 text-lg shadow"
           >
-            Achetez maintenant
+            <div
+              class="absolute inset-0 w-3 bg-corail-50 transition-all duration-[600ms] ease-out group-hover:w-full"
+            ></div>
+            <!-- md:w-1/2 text-nude-100 bg-blue-100 px-[7px] md:px-3 md:py-4 py-[10px] rounded-3xl mb-20 -->
+            <span class="relative text-nude-100 group-hover:text-blue-100"
+              >Acheter maintenant</span
+            >
           </button>
         </div>
       </div>
@@ -198,16 +193,22 @@
             </div>
           </div>
         </div>
-        <div class="text-center">
+        <div class="text-center mt-10">
           <button
-            class="mt-8 text-nude-100 md:px-7 md:py-4 bg-blue-100 px-4 py-3 rounded-xl"
+            class="group relative h-12 w-48 overflow-hidden rounded-lg bg-blue-100 text-lg shadow"
           >
-            Découvrir maintenant
+            <div
+              class="absolute inset-0 w-3 bg-nude-300 transition-all duration-[600ms] ease-out group-hover:w-full"
+            ></div>
+            <!-- md:w-1/2 text-nude-100 bg-blue-100 px-[7px] md:px-3 md:py-4 py-[10px] rounded-3xl mb-20 -->
+            <span class="relative text-nude-100 group-hover:text-blue-100"
+              >Découvrir maintenant</span
+            >
           </button>
         </div>
       </div>
     </div>
-    <div class="flex flex-col gap-y-6 mt-6">
+    <div class="flex flex-col gap-y-6 mt-6 mb-20">
       <p
         class="mx-4 lg:mx-[200px] md:mx-[100px] text-blue-100 font-extrabold text-xl md:text-subTitle"
       >
@@ -255,13 +256,13 @@
         >
           <div class="h-12 w-12">
             <img
-              src="../images/PHOTO/25147.jpg"
+              src="../images/WhatsApp Image 2023-03-08 at 20.16.08.jpeg"
               alt="image"
               class="rounded-full w-full h-full"
             />
           </div>
           <p class="text-center">“Lorem ipsum dolor sit amet consectetur.”</p>
-          <div class="flex gap-1 items-center">
+          <div class="flex gap-1 items-center"
             <p class="text-corail-100">Nill Smith</p>
             <p>- Directrice financier</p>
           </div>
@@ -290,7 +291,7 @@
   </body>
 </html>
 
-<script src="../lang/language.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>
   $(function () {
     $("#navbar").load("navbar.html");
