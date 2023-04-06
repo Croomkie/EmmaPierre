@@ -1,37 +1,39 @@
-function getBrowserLanguage() {
-    return navigator.language || navigator.userLanguage;
-  }
-  
-  function loadTranslations(language) {
-    let jsonFile = '../lang/en.json';
-  
-    if (language.startsWith('fr')) {
-      jsonFile = '../lang/fr.json';
-    }
-  
-    fetch(jsonFile)
-      .then(response => response.json())
-      .then(data => {
-        applyTranslations(data);
-      })
-      .catch(error => {
-        console.error('Error loading language file:', error);
+// language.js
+$(document).ready(function () {
+  // Fonction pour charger les traductions
+  function loadTranslations(lang) {
+    $.getJSON(`../lang/${lang}.json`, function (translations) {
+      $('[data-translate]').each(function () {
+        var key = $(this).data('translate');
+        $(this).text(translations[key]);
       });
-  }
-  
-  function applyTranslations(translations) {
-    const elements = document.querySelectorAll('[data-translate]');
-  
-    elements.forEach(element => {
-      const key = element.getAttribute('data-translate');
-      const translation = translations[key];
-  
-      if (translation) {
-        element.textContent = translation;
-      }
     });
   }
-  
-  const language = getBrowserLanguage();
-  loadTranslations(language);
-  
+
+  // Fonction pour définir la langue par défaut en fonction de la langue de l'utilisateur
+  function setUserLanguage() {
+    var userLanguage = navigator.language || navigator.userLanguage;
+    var languageCode = userLanguage.substring(0, 2); // Extraire les deux premiers caractères (ex: 'en', 'fr')
+    var supportedLanguages = ['en', 'fr'];
+
+    if (supportedLanguages.includes(languageCode)) {
+      loadTranslations(languageCode);
+    } else {
+      // Si la langue de l'utilisateur n'est pas prise en charge, définir une langue par défaut (ici, l'anglais)
+      var defaultLanguage = 'en';
+      loadTranslations(defaultLanguage);
+    }
+  }
+
+  // Gestionnaires d'événements pour les options de langue
+  $('#language-en').on('click', function () {
+    loadTranslations('en');
+  });
+
+  $('#language-fr').on('click', function () {
+    loadTranslations('fr');
+  });
+
+  // Définir la langue de l'utilisateur au démarrage de la page
+  setUserLanguage();
+});

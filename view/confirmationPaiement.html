@@ -27,13 +27,13 @@
                 <p class="text-center mt-2 font-Jost" data-translate="shopbar.circle.shop"></p>
             </div>
             <div class="flex flex-col items-center mx-2">
-                <div class="bg-gris-100 w-16 h-16 rounded-full flex items-center justify-center">
+                <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center">
                     <span class="text-nude-100 text-center text-lg">2</span>
                 </div>
                 <p class="text-center mt-2 font-Jost" data-translate="shopbar.circle.paid"></p>
             </div>
             <div class="flex flex-col items-center mx-2">
-                <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center">
+                <div class="bg-gris-100 w-16 h-16 rounded-full flex items-center justify-center">
                     <span class="text-nude-100 text-center text-lg">3</span>
                 </div>
                 <p class="text-center mt-2 font-Jost" data-translate="shopbar.circle.confirm"></p>
@@ -154,29 +154,30 @@
             </div>
         </div>
 
-
-
         <div class="flex justify-center">
             <button class="text-white bg-blue-100 mt-6 rounded-full p-2 place-items-center mb-3">Valider et
                 Payer</button>
         </div>
         <p class="text-center">Merci d'avoir passé votre commande sur notre site. A bientot !</p>
-
     </main>
+
+    <p data-translate="home"></p>
+
     <footer class="md:md\:w-full">
         <div id="foot"></div>
     </footer>
-</body>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="../lang/language.js"></script>
-<script>
-    $(function () {
-        $("#navbar").load("navbar.html");
-    });
-    $(function () {
-        $("#foot").load("footer.html");
-    });
-</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../lang/language.js"></script>
+    <script>
+        $(function () {
+            $("#navbar").load("navbar.html");
+        });
+
+        $(function () {
+            $("#foot").load("footer.html");
+        });
+    </script>
+</body>
 
 </html>
