@@ -37,6 +37,9 @@ module.exports = {
         title: "200px",
         subTitle: "40px",
       },
+      backgroundImage: {
+        'fil_ariane': "url('/images/fil_mobile_blanc_1.svg')",
+      }
     },
     fontFamily: {
       Jost: ["Jost"],
@@ -45,7 +48,7 @@ module.exports = {
     screens: {
       xl: "1100px",
       md: "768px",
-      lg:"1100px"
+      lg: "1100px"
     }
   },
   plugins: [require('flowbite/plugin.js')],
