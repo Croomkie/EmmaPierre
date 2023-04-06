@@ -22,12 +22,83 @@
     <div class="mx-4 lg:mx-[200px] md:mx-[100px] mb-36" id="navbar"></div>
 
     <!-- Presentation  -->
-    <div class=" flex justify-center">
-      <img class="w-[300px]" src="../images/fil/fil mobile blanc.svg">
-    </div> 
+    
+<div class="container">
+  <img class="logo" src="../images/fil/fil mobile blanc 1.svg">
+  <div class="content">
+    <img src="../images/WhatsApp Image 2023-03-08 at 20.16.06.jpeg" class="image">
+    <p class="text">Lorem ipsum dolor sit vero,ci! Lorem ipsum dolor sit vero,ci! Lorem ipsum dolor sit vero,ci!</p>
+  </div>
+</div>
 
-    <div class="w-158 mt-20"></div>
-    <div id="footer"></div>
+<style>
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 300px;
+}
+
+.content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.image {
+  height: 32px;
+  width: auto;
+}
+
+.text {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 200px;
+  }
+  
+  .content {
+    top: 50%;
+  }
+  
+  .image {
+    height: 24px;
+  }
+  
+  .text {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    width: 150px;
+  }
+  
+  .content {
+    top: 60%;
+  }
+  
+  .image {
+    height: 16px;
+  }
+  
+  .text {
+    font-size: 12px;
+  }
+}
+</style>
+
+  <div id="footer"></div>
   </body>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
