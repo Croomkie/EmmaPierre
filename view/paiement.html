@@ -7,44 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/dist/output.css" rel="stylesheet">
     <title data-translate="title"></title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;400;600;700;800&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-    <style>
-        .barre-horizontale {
-            position: absolute;
-            background-color: transparent;
-            width: 200px;
-            top: 35%;
-            transform: translateY(-50%);
-            border-top: 7px dotted #000;
-            z-index: -1;
-        }
-
-        .underline-bar {
-            display: block;
-            width: 50px;
-            height: 2px;
-            background-color: #1D5F6B;
-            margin-top: 0px;
-        }
-
-        .underline-bar-article {
-            display: block;
-            width: 100%;
-            height: 2px;
-            background-color: #1D5F6B;
-            margin-top: 0px;
-        }
-
-        @media (min-width: 768px) {
-            .barre-horizontale {
-                width: 700px;
-            }
-        }
-    </style>
 </head>
 
 <body class="font-Jost">
@@ -162,7 +124,7 @@
                     <span class="underline-bar"></span>
                 </div>
 
-                <div class="md:w-full">
+                <a class="md:w-full">
                     <section class="font-Jost flex flex-col gap-4 bg-nude-100 p-4 rounded-lg mb-4">
                         <article class="flex flex-col gap-4">
                             <div class="flex items-center gap-4">
@@ -223,9 +185,11 @@
                             <span class="underline-bar-article"></span>
                         </article>
                     </section>
+                    <a href="confirmationPaiement.html"></a>
                     <button
                         class="float-right rounded-full bg-blue-100 text-nude-100 px-3 py-1 mb-4 hover:bg-nude-100 hover:text-blue-100 transition-colors duration-200"
                         data-translate="button.nextstep"></button>
+                </a>
                 </div>
             </div>
         </section>
@@ -309,7 +273,7 @@
             <span class="underline-bar"></span>
         </div>
 
-        <div class="md:w-full md:hidden">
+        <a class="md:w-full md:hidden">
             <section class="font-Jost flex flex-col gap-4 bg-nude-100 p-4 rounded-lg mb-4">
                 <article class="flex flex-col gap-4">
                     <div class="flex items-center gap-4">
@@ -376,25 +340,28 @@
                     <span class="underline-bar-article"></span>
                 </article>
             </section>
+            <a href="confirmationPaiement.html">
             <button
                 class="float-right rounded-full bg-blue-100 text-nude-100 px-3 py-1 mb-4 hover:bg-nude-100 hover:text-blue-100 transition-colors duration-200"
                 data-translate="button.nextstep"></button>
+        </a>
         </div>
 
 
     </main>
 
     <footer id="footer"></footer>
-
-    <script src="../lang/language.js"></script>
-    <script>
-        $(function () {
-            $("#navbar").load("navbar.html");
-        });
-        $(function () {
-            $("#footer").load("footer.html");
-        });
-    </script>
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+  $(function () {
+    $("#navbar").load("navbar.html");
+  });
+
+  $(function () {
+    $("#footer").load("footer.html");
+  });
+</script>
 
 </html>
