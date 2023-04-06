@@ -43,7 +43,7 @@ module.exports = {
       title: ["Neue Machina"],
     },
     screens: {
-      mdlg: "900px",
+      xl: "1100px",
       md: "768px",
       lg:"1100px"
     }
