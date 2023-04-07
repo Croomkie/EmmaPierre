@@ -54,5 +54,9 @@
    "menu.product":"Products",
   "menu.presentation":"Presentation",
   "menu.contact":"Contact",
-  "menu.blog":"Blog"
+  "menu.blog":"Blog",
+
+  "legal" : "Legal Notices",
+  "cgv" : "General Sales Conditions",
+  "follow" : "Follow us:"
 }
