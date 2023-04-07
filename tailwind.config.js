@@ -34,7 +34,7 @@ module.exports = {
         197: "197px",
       },
       fontSize: {
-        title: "200px",
+        title: "180px",
         subTitle: "40px",
       },
       backgroundImage: {
