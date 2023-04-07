@@ -49,5 +49,10 @@
   "text.home.notice.com": "- Financial Director",
   "title.home.value": "Our values",
   "text.home.value": "Discover our handmade jewelry in our Lyon workshop, in limited editions or even as unique pieces for complete exclusivity. Each material is carefully selected to ensure exceptional quality and to offer you a unique touch that will distinguish you. Choosing craftsmanship means contributing to the maintenance of know-how and employment in France. We are proud to offer you high-quality jewelry, made with passion and expertise. Thank you for your support!",
-  "text.home.presentation.header": "\"I make all my jewelry by hand in my Lyon workshop in limited editions to ensure a certain exclusivity. Some of them are even one of a kind.\""
+  "text.home.presentation.header": "\"I make all my jewelry by hand in my Lyon workshop in limited editions to ensure a certain exclusivity. Some of them are even one of a kind.\"",
+
+   "menu.product":"Products",
+  "menu.presentation":"Presentation",
+  "menu.contact":"Contact",
+  "menu.blog":"Blog"
 }
